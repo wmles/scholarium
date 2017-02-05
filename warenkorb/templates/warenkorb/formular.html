@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2> Sichere dir deinen Zugang - solange der Nutzername noch frei ist! </h2>
+
+<p>Gib unten deine Daten ein; du bekommst dann eine Mail mit einem zufällig generierten Passwort.</p>
+<form action="{% url 'Warenkorb:cart-add' %}" method="post">
+
+{% csrf_token %}
+
+<table>
+<tr>
+    <td style="color:black;">Nutzername:</td>
+    <td style="color:black;"><input type="text" name="pk" id="1" value="" /></td>
+</tr>
+<tr>
+    <td style="color:black;">eMail-Adresse:</td>
+    <td style="color:black;"><input type="text" name="quantity" id="2" value="" /></td>
+</tr>
+</table>
+
+<input type="submit" value="add!" />
+
+</form>
+
+{% endblock %}
