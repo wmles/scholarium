@@ -105,7 +105,7 @@ USERENA_SIGNIN_REDIRECT_URL = '/accounts/%(username)s/'
 LOGIN_URL = '/accounts/signin/'
 LOGOUT_URL = '/accounts/signout/'
 
-SITE_ID = 2 # Achtung, das ist für localhost
+SITE_ID = 2 # für localhost in der ursprünglichen DB
 
 # easycart-specific settings
 
