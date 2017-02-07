@@ -12,7 +12,6 @@
   }
 </script>
 
-
 <div class="dropdown">
   <button 
     class="login_button" 
@@ -38,8 +37,8 @@
       >Guthaben: {{ user.my_profile.guthaben }} <img 
       class='dropdown_coin' src="{% static 'img/coin.png' %}">
     </li>
-    <li><a href="/spende/korb.php"
-      >Warenkorb <span class="badge">0</span></a>
+    <li><a href="/warenkorb/"
+      >Warenkorb <span class="badge">{{ cart.item_count }}</span></a>
     </li> 
     <li><a href="/spende/bestellungen.php">Bestellungen</a></li>
     <li class="divider"></li>

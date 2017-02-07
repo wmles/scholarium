@@ -10,6 +10,7 @@ class Produkt(Grundklasse):
     pass
     
 class ProduktVorlage(Grundklasse):
+    
     def erstelle_produkt(self):
         return None
     

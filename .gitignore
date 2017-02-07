@@ -1,6 +1,6 @@
 *.pyc
 *~
-db.sqlite
+db.sqlite3
 /venv/
 /media/
 /static/
