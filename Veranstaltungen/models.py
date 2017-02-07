@@ -7,6 +7,8 @@ Die Modelle der Veranstaltungen
 
 from django.db import models
 from seite.models import Grundklasse
+from Produkte.models import KlasseMitProdukten
+import random, string
 
 class ArtDerVeranstaltung(Grundklasse):
     beschreibung = models.TextField(
@@ -21,7 +23,7 @@ class ArtDerVeranstaltung(Grundklasse):
     class Meta:
         verbose_name_plural = "Arten der Veranstaltungen"
     
-class Veranstaltung(Grundklasse):
+class Veranstaltung(KlasseMitProdukten):
     beschreibung = models.TextField(max_length=2000)
     datum = models.DateField()
     art_veranstaltung = models.ForeignKey(ArtDerVeranstaltung)
@@ -31,7 +33,7 @@ class Veranstaltung(Grundklasse):
     def price(self):
         return self.art_veranstaltung.preis_praesenz
     
-class Medium(Grundklasse):
+class Medium(KlasseMitProdukten):
     gehoert_zu = models.ForeignKey(Veranstaltung, null=True, blank=True)
     datei = models.FileField()
     # folgendes v.a. relevant wenn keine Veranstaltung verknüpft ist:
@@ -41,10 +43,15 @@ class Medium(Grundklasse):
     class Meta:
         verbose_name_plural = "Medien"
     
+    def __str__(self):
+        return '{}: {}'.format(self.bezeichnung, self.slug) 
+        
     def save(self):
         self.beschreibung = self.beschreibung or self.gehoert_zu.beschreibung
         self.bezeichnung = self.bezeichnung or self.gehoert_zu.bezeichnung
         self.typ = self.typ or self.gehoert_zu.art_veranstaltung
         self.datum = self.datum or self.gehoert_zu.datum
+        if not self.pk:
+            self.slug = ''.join(random.sample(string.ascii_lowercase, 12))
         super().save()
         
