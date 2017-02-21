@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-import Grundgeruest
+#import Grundgeruest
 
 urlpatterns = [
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

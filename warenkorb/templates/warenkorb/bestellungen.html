@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load humanize %}
+
+{% block content %}
+
+<h2> Liste Ihrer Käufe </h2>
+
+<table>
+<th>
+    <td style="color:black;">Datum</td>
+    <td style="color:black;">Bezeichnung</td>    
+    <td style="color:black;">Preis</td>
+</th>
+{% for kauf in bestellungen %}
+<tr>
+    <td style="color:black;">{{ kauf.zeit|naturaltime }}</td>
+    <td style="color:black;">{{ kauf.produkt }}</td>
+    <td style="color:black;"> Preis später </td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}
