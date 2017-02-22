@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'Grundgeruest',
     'Veranstaltungen',
     'Produkte',
+    'Bibliothek',
     'warenkorb',
     'accounts',
 

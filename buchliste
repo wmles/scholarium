@@ -1,0 +1,299 @@
+@book{arnn_churchills_2015,
+	address = {Nashville, TN},
+	title = {Churchill's {Trial}},
+	publisher = {Nelson Books},
+	author = {Arnn, Larry P.},
+	year = {2015}
+}
+
+@book{hodgman_handbook_1960,
+	address = {Cleveland, Ohio},
+	title = {Handbook of {Chemistry} and {Physics}},
+	publisher = {Chemical Rubber},
+	author = {Hodgman, Charles D.},
+	year = {1960}
+}
+
+@book{leitner_taschenbuch_1974,
+	address = {Berlin},
+	edition = {13.},
+	title = {Taschenbuch für den {Maschinenbau}. 2 {Bände}},
+	publisher = {Springer},
+	author = {Leitner, A.},
+	year = {1974}
+}
+
+@book{domayer_normgerechte_1973,
+	address = {Wien},
+	title = {Die {Normgerechte} {Werkzeichnung}},
+	publisher = {Österreichischer Gewerkschaftsbund},
+	author = {Domayer, Rudolf},
+	year = {1973}
+}
+
+@misc{center_for_history_and_new_media_zotero_????,
+	title = {Zotero {Quick} {Start} {Guide}},
+	url = {http://zotero.org/support/quick_start_guide},
+	author = {{Center for History and New Media}}
+}
+
+@book{frank_anne-frank-tagebuch_2000,
+	address = {Frankfurt am Main},
+	edition = {Ungekürzte Ausg., 21. Aufl},
+	series = {Fischer},
+	title = {Anne-{Frank}-{Tagebuch}},
+	isbn = {978-3-596-11377-4},
+	language = {ger},
+	number = {11377},
+	publisher = {Fischer-Taschenbuch-Verl},
+	author = {Frank, Anne and Frank, Otto H.},
+	year = {2000},
+	note = {OCLC: 76172530},
+	keywords = {Amsterdam, Erlebnisbericht, Frank, Anne, Geschichte 1942-1944, Judenverfolgung, Tagebuch 1942-1944}
+}
+
+@book{weiss_united_2007,
+	address = {Boulder, Colo},
+	edition = {5. ed},
+	title = {The {United} {Nations} and changing world politics},
+	isbn = {978-0-8133-4347-1},
+	language = {eng},
+	publisher = {Westview Press},
+	editor = {Weiss, Thomas George},
+	year = {2007},
+	note = {OCLC: 266971719},
+	keywords = {1989-, Entwicklungspolitik, Internationale Politik, Menschenrechtspolitik, Nachhaltigkeit, Sicherheitspolitik, United Nations, Vereinte Nationen, World politics, World politics 1989-}
+}
+
+@book{gandhi_mohandas:_2006,
+	address = {New Delhi ; New York},
+	title = {Mohandas: a true story of a man, his people, and an empire},
+	isbn = {978-0-670-99932-3},
+	shorttitle = {Mohandas},
+	abstract = {Biography of Mahatma Gandhi, 1869-1948, nationalist, political leader and statesman from India},
+	publisher = {Penguin Books},
+	author = {Gandhi, Rajmohan},
+	year = {2006},
+	keywords = {1919-1947, Gandhi, India, Nationalists, Politicians, Politics and government, Statesmen}
+}
+
+@book{houellebecq_extension_2001,
+	address = {Paris},
+	series = {J'ai lu},
+	title = {Extension du domaine de la lutte ; texte intégral},
+	isbn = {978-2-290-04576-3},
+	language = {fre},
+	number = {4576},
+	publisher = {Éd. J'ai lu},
+	author = {Houellebecq, Michel},
+	year = {2001},
+	note = {OCLC: 248029387}
+}
+
+@book{houellebecq_les_2005,
+	address = {Paris},
+	series = {J'ai lu},
+	title = {Les particules élémentaires},
+	isbn = {978-2-290-30305-4},
+	language = {fre},
+	number = {5602},
+	publisher = {Éd. J'ai lu},
+	author = {Houellebecq, Michel},
+	year = {2005},
+	note = {OCLC: 758265951}
+}
+
+@book{brandstatter_wien_2005,
+	address = {Wien},
+	edition = {1. Aufl},
+	title = {Wien 1900: {Kunst} und {Kultur}: {Fokus} der europäischen {Moderne}},
+	isbn = {978-3-85498-355-2},
+	shorttitle = {Wien 1900},
+	publisher = {Brandstätter},
+	editor = {Brandstätter, Christian},
+	year = {2005},
+	keywords = {19th century, 20th century, Arts, Austrian, Austria Vienna, Civilization, Vienna (Austria)}
+}
+
+@book{saramago_seeing_2007,
+	address = {London},
+	title = {Seeing},
+	isbn = {978-0-09-948362-5},
+	language = {English},
+	publisher = {Vintage},
+	author = {Saramago, José},
+	year = {2007},
+	note = {OCLC: 78988718}
+}
+
+@book{greene_third_1977,
+	address = {London; New York},
+	title = {The third man ; and, the fallen idol},
+	isbn = {978-0-14-018533-1 978-0-14-003278-9},
+	abstract = {The third man : Rollo Martins, a second-rate novelist, arrives penniless to visit his friend and hero, Harry Lime. But Harry has died in suspicious circumstances, and the police are closing in on his associates. The fallen idol : A small boy is caught up in the games adults play. Left in the care of the butler and his wife while his parents go on holiday, Philip realizes too late the danger of lies and deceit. But the truth is even deadlier.},
+	language = {English},
+	publisher = {Penguin},
+	author = {Greene, Graham and Greene, Graham},
+	year = {1977},
+	note = {OCLC: 26578913}
+}
+
+@book{canal-forgues_droit_2007,
+	address = {Paris},
+	series = {Champs université {Droit}},
+	title = {Droit international public},
+	isbn = {978-2-08-120392-1},
+	language = {fre},
+	number = {3058},
+	publisher = {Flammarion},
+	author = {Canal-Forgues, Eric and Rambaud, Patrick},
+	year = {2007},
+	note = {OCLC: 254701868},
+	keywords = {Lehrbuch, Völkerrecht}
+}
+
+@book{ronan_symmetry_2007,
+	address = {Oxford},
+	edition = {1. publ. as an Oxford Univ. Press paperback},
+	title = {Symmetry and the {Monster}: one of the greatest quests of mathematics},
+	isbn = {978-0-19-280723-6},
+	shorttitle = {Symmetry and the {Monster}},
+	language = {eng},
+	publisher = {Oxford Univ. Press},
+	author = {Ronan, Mark},
+	year = {2007},
+	note = {OCLC: 253892218},
+	keywords = {Geschichte, Monster-Gruppe, Snowflakes, Symmetrie, Symmetry}
+}
+
+@book{_primary_1996,
+	address = {New York},
+	edition = {Warner Books ed},
+	title = {Primary colors: a novel of politics},
+	isbn = {978-0-446-60427-7},
+	shorttitle = {Primary colors},
+	language = {eng},
+	publisher = {Warner Books},
+	year = {1996},
+	note = {OCLC: 246107984}
+}
+
+@book{golding_herr_2004,
+	address = {Frankfurt am Main},
+	edition = {48. Aufl},
+	series = {Fischer},
+	title = {Herr der {Fliegen}: {Roman}},
+	isbn = {978-3-596-21462-4},
+	shorttitle = {Herr der {Fliegen}},
+	language = {ger},
+	number = {1462},
+	publisher = {Fischer},
+	author = {Golding, William and Stiehl, Hermann},
+	year = {2004},
+	note = {OCLC: 727886261},
+	keywords = {Belletristische Darstellung, Gesellschaft, Macht, Ordnung, Robinsonade}
+}
+
+@book{roth_hiob:_2000,
+	address = {Köln},
+	edition = {41. Aufl},
+	series = {{KiWi}},
+	title = {Hiob: {Roman} eines einfachen {Mannes}},
+	isbn = {978-3-462-01510-2},
+	shorttitle = {Hiob},
+	language = {ger},
+	number = {6},
+	publisher = {Kiepenheuer \& Witsch},
+	author = {Roth, Joseph},
+	year = {2000},
+	note = {OCLC: 254549069}
+}
+
+@book{campbell_china_2006,
+	address = {Dallas, Tex},
+	edition = {1. paperback ed},
+	title = {The {China} study: the most comprehensive study of nutrition ever conducted and the startling implications for diet, weight loss and long-term health},
+	isbn = {978-1-932100-66-2},
+	shorttitle = {The {China} study},
+	language = {eng},
+	publisher = {Benbella Books},
+	author = {Campbell, T. Colin and Campbell, Thomas M.},
+	year = {2006},
+	note = {OCLC: 827053768},
+	keywords = {China, Diet in disease, Ernährung, Ernährungserhebung, Gesundheitsindikator, Krankheit, Nutrition, Nutritionally induced diseases, Vegetarische Kost}
+}
+
+@book{blake_zwischen_2007,
+	address = {S.l.},
+	title = {Zwischen feuer und feuer.},
+	isbn = {978-3-423-13599-3},
+	language = {English},
+	publisher = {Deutscher Taschenbuch Ver},
+	author = {Blake, William},
+	year = {2007},
+	note = {OCLC: 946581477}
+}
+
+@book{waberi_den_2008,
+	address = {Hamburg},
+	edition = {Dt. Erstausg., 1. Aufl},
+	title = {In den {Vereinigten} {Staaten} von {Afrika}: {Roman}},
+	isbn = {978-3-89401-563-3},
+	shorttitle = {In den {Vereinigten} {Staaten} von {Afrika}},
+	language = {ger},
+	publisher = {Ed. Nautilus},
+	author = {Waberi, Abdourahman A. and Meintel, Katja},
+	year = {2008},
+	note = {OCLC: 214418146}
+}
+
+@book{saramago_stadt_2012,
+	address = {Reinbek bei Hamburg},
+	edition = {23. Aufl},
+	title = {Die {Stadt} der {Blinden}: {Roman}},
+	isbn = {978-3-499-22467-6},
+	shorttitle = {Die {Stadt} der {Blinden}},
+	language = {ger},
+	publisher = {Rowohlt-Taschenbuch-Verl},
+	author = {Saramago, José and Mertin, Ray-Güde},
+	year = {2012},
+	note = {OCLC: 951339620}
+}
+
+@book{rilke_stunden-buch:_2004,
+	address = {Frankfurt am Main},
+	edition = {1. Aufl., [Nachdr.]},
+	series = {Insel-{Taschenbuch}},
+	title = {Das {Stunden}-{Buch}: enthaltend die drei {Bücher} {Vom} mönchischen {Leben}, {Von} der {Pilgerschaft}, {Von} der {Armut} und vom {Tode}},
+	isbn = {978-3-458-31702-9},
+	shorttitle = {Das {Stunden}-{Buch}},
+	language = {ger},
+	number = {2},
+	publisher = {Insel-Verl},
+	author = {Rilke, Rainer Maria},
+	year = {2004},
+	note = {OCLC: 254909179}
+}
+
+@book{lagreca_noble_2005,
+	address = {Chicago},
+	edition = {1st trade pbk. ed},
+	title = {Noble vision},
+	isbn = {978-0-9744579-4-9},
+	publisher = {Winged Victory Press},
+	author = {LaGreca, Gen},
+	year = {2005},
+	keywords = {Ballerinas, Bureaucracy, Love stories, Neurosurgeons, New York (State)}
+}
+
+@book{dykes_old_2008,
+	address = {Ledbury},
+	title = {Old {Nick}'s guide to happiness: a philosophical novel},
+	isbn = {978-0-9559294-0-3},
+	shorttitle = {Old {Nick}'s guide to happiness},
+	language = {English},
+	publisher = {Lathe Biosas},
+	author = {Dykes, Nicholas},
+	year = {2008},
+	note = {OCLC: 299238867}
+}

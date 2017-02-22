@@ -24,7 +24,8 @@ urlpatterns = [
     url(r'^warenkorb/', include('warenkorb.urls')),
     url(r'^veranstaltungen/', include(veranstaltungen_urls)),
     url(r'^salon/', include(salons_urls)),
-    url(r'^salon/', include(seminare_urls)),    
-    url(r'^', include(veranstaltungen_urls)),
+    url(r'^seminare/', include(seminare_urls)),
+    url(r'^bibliothek/', include('Bibliothek.urls')),        
+    url(r'^', include('Grundgeruest.urls')),
 ]
 
