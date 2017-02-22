@@ -13,7 +13,8 @@ veranstaltungen_urls = [
     url(r'^(?P<slug>[-\w]+)/$', 
         DetailView.as_view(
             template_name='Veranstaltungen/detail.html',
-            model=Veranstaltung), 
+            model=Veranstaltung,
+            context_object_name = 'veranstaltung'), 
         name='veranstaltung_detail'),
     ]
 
