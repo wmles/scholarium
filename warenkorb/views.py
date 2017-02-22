@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.core.urlresolvers import reverse
 
 # Create your views here.
@@ -35,4 +35,4 @@ def kaufen(request):
         nutzer.save()
         warenkorb.remove(ware.obj.pk)
         
-    return warenkorb.encode()
+    return HttpResponseRedirect('/warenkorb/')

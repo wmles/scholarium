@@ -17,5 +17,9 @@
   {% csrf_token %}
   <input type="submit" value="Auschecken!" />
 </form>
+<form action="{% url 'Warenkorb:cart-empty' %}" method="post">
+  {% csrf_token %}
+  <input type="submit" value="Warenkorb leeren!" />
+</form>
 
 {% endblock content %}
