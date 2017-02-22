@@ -37,17 +37,17 @@
       >Guthaben: {{ user.my_profile.guthaben }} <img 
       class='dropdown_coin' src="{% static 'img/coin.png' %}">
     </li>
-    <li><a href="/warenkorb/"
+    <li><a href="{% url 'Warenkorb:index' %}"
       >Warenkorb <span class="badge">{{ cart.item_count }}</span></a>
     </li> 
-    <li><a href="/spende/bestellungen.php">Bestellungen</a></li>
+    <li><a href="{% url 'Warenkorb:bestellungen' %}">Bestellungen</a></li>
     <li class="divider"></li>
     <li><a href="/accounts/signout/">Abmelden</a></li>        			               		
   </ul>
 </div>
 <div class="login_button">
   <a 
-    href="/warenkorb/"
+    href="{% url 'Warenkorb:index' %}"
     >Warenkorb <span class="badge">{{ cart.item_count }}</span>
   </a>
 </div>
