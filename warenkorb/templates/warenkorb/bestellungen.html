@@ -12,11 +12,11 @@
             <th>Status</th>
             <th>Plätze</th>
         </tr>
-        {% for kauf in bestellungen %}
+        {% for kauf in veranstaltungen %}
         <tr>
             <td>{{ kauf.zeit|naturaltime }}</td>
             <td>{{ kauf.produkt }}</td>
-            <td> Preis später </td>
+            <td>{{ kauf.menge }}</td>
         </tr>
         {% endfor %}
     </table>
@@ -32,7 +32,7 @@
             <th/>
             <th>Download</th>
         </tr>
-        {% for kauf in bestellungen %}
+        {% for kauf in medien %}
         <tr>
             <td>{{ kauf.zeit|naturaltime }}</td>
             <td>{{ kauf.produkt }}</td>
@@ -53,7 +53,7 @@
             <th>Ihre Spende</th>
             <th>Status</th>
         </tr>
-        {% for kauf in bestellungen %}
+        {% for kauf in medien %}
         <tr>
             <td>{{ kauf.zeit|naturaltime }}</td>
             <td>{{ kauf.produkt }}</td>
@@ -70,7 +70,7 @@
             <th>Plätze</th>
             <th>Status</th>
         </tr>
-        {% for kauf in bestellungen %}
+        {% for kauf in medien %}
         <tr>
             <td>{{ kauf.zeit|naturaltime }}</td>
             <td>{{ kauf.produkt }}</td>
