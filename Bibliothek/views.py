@@ -15,7 +15,7 @@ attributnamen = {
     'series': 'serie',
     'year': 'jahr'}
 
-def aus_datei_einlesen(request):
+def aus_datei_einlesen(request, exlibris=''):
     f = open('buchliste', 'r')
     text = f.read()[6:-2]
     f.close()
@@ -31,6 +31,7 @@ def aus_datei_einlesen(request):
             for zeile in zeilen][1:])
     
         buch = Buch.objects.create(bezeichnung=bezeichnung)
+        buch.exlibris = exlibris
         for key in daten:
             if key in attributnamen:
                 setattr(buch, attributnamen[key], daten[key])

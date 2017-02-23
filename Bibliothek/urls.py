@@ -13,6 +13,7 @@ urlpatterns = [
             context_object_name='buecher',
         ), 
         name='liste_alle'),
+    url('^aus_datei_einlesen/([\w-]*)$', views.aus_datei_einlesen, name='einlesen'),
     url('^aus_datei_einlesen$', views.aus_datei_einlesen, name='einlesen'),
     ]
 

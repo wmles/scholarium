@@ -36,7 +36,12 @@ class Buch(Grundklasse):
     sprache = models.CharField(
         max_length=3,
         null=True, blank=True)
+    exlibris = models.CharField(
+        max_length=40,
+        null=True, blank=True)
     stichworte = models.CharField(
         max_length=200,
         null=True, blank=True)
-
+    
+    class Meta:
+        verbose_name_plural = 'Bücher'
