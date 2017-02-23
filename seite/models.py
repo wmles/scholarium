@@ -15,7 +15,7 @@ class Grundklasse(models.Model):
         auto_now_add=True,
         editable=False)
     
-    def save(self):
+    def save(self, **kwargs):
         if not self.slug:
             self.slug = slugify(self.bezeichnung)
         super(Grundklasse, self).save()

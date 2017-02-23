@@ -15,12 +15,17 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-#import Grundgeruest
+from Veranstaltungen.urls import *
 
 urlpatterns = [
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/', include('userena.urls')),
     url(r'^warenkorb/', include('warenkorb.urls')),
+    url(r'^veranstaltungen/', include(veranstaltungen_urls)),
+    url(r'^salon/', include(salons_urls)),
+    url(r'^seminare/', include(seminare_urls)),
+    url(r'^bibliothek/', include('Bibliothek.urls')),        
     url(r'^', include('Grundgeruest.urls')),
 ]
+
