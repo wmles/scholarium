@@ -17,7 +17,7 @@ attributnamen = {
 
 def aus_datei_einlesen(request, exlibris=''):
     f = open('buchliste', 'r')
-    text = f.read()[6:-2]
+    text = f.read()[7:-2] # an die bibtex-Ausgabe von zotero angepasst
     f.close()
 
     trennung = re.compile('\}\n\n(?P<name>[@, \w]*)\{')

@@ -1,13 +1,13 @@
 from django.conf.urls import url
 
 from . import views, models
-from django.views.generic.list import ListView
+from Grundgeruest.views import ListeMitMenue
 
 app_name = 'Veranstaltungen'
 
 urlpatterns = [
     url(r'^$', 
-        ListView.as_view(
+        ListeMitMenue.as_view(
             template_name='Bibliothek/liste_alle.html',
             model=models.Buch,
             context_object_name='buecher',

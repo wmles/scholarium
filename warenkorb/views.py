@@ -7,6 +7,8 @@ from django.core.urlresolvers import reverse
 from easycart import BaseCart, BaseItem
 from Produkte.models import Produkt
 from accounts.models import Kauf
+from Grundgeruest.views import erstelle_liste_menue
+from accounts.models import Kauf
 
 
 class Ware(BaseItem):
@@ -16,6 +18,16 @@ class Warenkorb(BaseCart):
     item_class = Ware
     def get_queryset(self, pks):
         return Produkt.objects.filter(pk__in=pks)
+
+def bestellungen(request):
+    nutzer = request.user.my_profile
+    liste_menue = erstelle_liste_menue(nutzer)
+    kaeufe = Kauf.objects.filter(nutzer=nutzer)
+    medien = [kauf for kauf in kaeufe if kauf.produkt.zu_medium]
+    veranstaltungen = [kauf for kauf in kaeufe if kauf.produkt.zu_veranstaltung]
+    return render(request, 
+        'warenkorb/bestellungen.html', 
+        {'medien': medien, 'veranstaltungen': veranstaltungen})
 
 def kaufen(request):
     warenkorb = Warenkorb(request)
@@ -36,3 +48,5 @@ def kaufen(request):
         warenkorb.remove(ware.obj.pk)
         
     return HttpResponseRedirect('/warenkorb/')
+    
+

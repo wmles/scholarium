@@ -1,7 +1,7 @@
 from django.conf.urls import url
 
 from . import views
-from django.views.generic.detail import DetailView
+from Grundgeruest.views import DetailMitMenue
 from Veranstaltungen.models import Veranstaltung
 
 app_name = 'Veranstaltungen'
@@ -11,7 +11,7 @@ veranstaltungen_urls = [
         views.ListeAlle.as_view(), 
         name='liste_alle'),
     url(r'^(?P<slug>[-\w]+)/$', 
-        DetailView.as_view(
+        DetailMitMenue.as_view(
             template_name='Veranstaltungen/detail.html',
             model=Veranstaltung,
             context_object_name = 'veranstaltung'), 
