@@ -1,22 +1,84 @@
-{% extends "base.html" %}
-{% load humanize %}
+{% extends "base.html" %} {% load humanize %} {% block content %}
 
-{% block content %}
 
-<h2> Liste Ihrer Käufe </h2>
+<h1> Übersicht über Bestellungen</h1>
+<div class="seperator">
+    <h2>Ihre Veranstaltungen</h2></div>
+<div class="container">
 
-<table>
-<th>
-    <td style="color:black;">Datum</td>
-    <td style="color:black;">Bezeichnung</td>    
-    <td style="color:black;">Preis</td>
-</th>
-{% for kauf in bestellungen %}
-<tr>
-    <td style="color:black;">{{ kauf.zeit|naturaltime }}</td>
-    <td style="color:black;">{{ kauf.produkt }}</td>
-    <td style="color:black;"> Preis später </td>
-</tr>
-{% endfor %}
-</table>
+    <table>
+        <tr>
+            <th/>
+            <th>Status</th>
+            <th>Plätze</th>
+        </tr>
+        {% for kauf in bestellungen %}
+        <tr>
+            <td>{{ kauf.zeit|naturaltime }}</td>
+            <td>{{ kauf.produkt }}</td>
+            <td> Preis später </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div class="seperator">
+    <h2>Ihre Schriften und Medien</h2></div>
+<div class="container">
+
+    <table>
+        <tr>
+            <th/>
+            <th/>
+            <th>Download</th>
+        </tr>
+        {% for kauf in bestellungen %}
+        <tr>
+            <td>{{ kauf.zeit|naturaltime }}</td>
+            <td>{{ kauf.produkt }}</td>
+            <td> Preis später </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div class="seperator">
+    <h2>Ihre Spenden und Programme</h2></div>
+<div class="container">
+    <h2>Spenden</h2>
+
+    <table>
+        <tr>
+            <th/>
+            <th>Ihre Spende</th>
+            <th>Status</th>
+        </tr>
+        {% for kauf in bestellungen %}
+        <tr>
+            <td>{{ kauf.zeit|naturaltime }}</td>
+            <td>{{ kauf.produkt }}</td>
+            <td> Preis später </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Programme</h2>
+
+    <table>
+        <tr>
+            <th/>
+            <th>Plätze</th>
+            <th>Status</th>
+        </tr>
+        {% for kauf in bestellungen %}
+        <tr>
+            <td>{{ kauf.zeit|naturaltime }}</td>
+            <td>{{ kauf.produkt }}</td>
+            <td> Preis später </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</div>
+
 {% endblock %}
