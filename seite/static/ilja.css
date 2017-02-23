@@ -127,6 +127,7 @@ body {
 
 p {
 	font-family: "Garamond", Georgia, Times, sans-serif;
+	text-align: justify;
 }
 
 ul, ol {
@@ -138,6 +139,20 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: "Futura Book", Helvetica, Arial, serif;
 	font-weight: bold;
 	text-decoration: none;
+}
+
+h1 {
+	font-size: 34pt;
+	text-align: center;
+	display: block;
+	margin: 2em 0;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 20pt;
+	text-align: center;
+	margin-top: 40px;
 }
 
 span {
@@ -387,9 +402,33 @@ img.dropdown_coin {
 /*==================================================*/
 
 .inhalt {
-	width: 50%;
 	margin: 50px auto;
-	text-align: justify;
+}
+
+.container {
+	width: 60%;
+	padding: 50px 20%;
+}
+
+table {
+	width: 100%;
+}
+
+th, td {
+	border-bottom: 1px solid rgb(220,220,220);
+	
+}
+
+th {
+	font-size: 14pt;
+	height: 20px;
+  padding: 5px 0;
+	color: rgb(180,180,180);
+	text-align: right;
+}
+
+td {
+	font-size: 12pt;
 }
 
 div.veranstaltungen {
@@ -447,20 +486,19 @@ div.veranstaltung p + div > img {
 }
 
 /*============== fuer detail-view, uebernommen =============*/
-.salon_seperator {
+.seperator {
 	box-shadow: 0 0 1px 0 rgba(0,0,0,0.6);
 	width: 100%;
 	text-align: center;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	margin-bottom: 30px;
+	padding: 15px 0;
 	background: rgb(250,250,250);
 }
 
-.salon_seperator h1 {
+.seperator h2 {
 	font-size: 20pt;
 	color: rgba(0,0,0,0.6);
 	text-transform: uppercase;
+	margin-top: 0;
 }
 
 .salon_content {
@@ -685,4 +723,3 @@ div.veranstaltung p + div > img {
 .footer_social_youtube {
 	background: url(img/footer_social_youtube.png) no-repeat;
 }
-
