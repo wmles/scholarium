@@ -5,17 +5,20 @@ from django.core.urlresolvers import reverse
 from django.views.generic import ListView, DetailView
 from .models import *
 
-def erstelle_liste_menue(profil=None):
-    hauptpunkte = Hauptpunkt.objects.all()
+def erstelle_liste_menue(user=None):
+    if hasattr(user, 'my_profile'): # d.h. wenn nicht AnonymousUser zugreift
+        menue = GanzesMenue.objects.get(bezeichnung='AngemeldetNormal')
+    else:
+        menue = GanzesMenue.objects.get(bezeichnung='Gast')
     liste_punkte = []
-    for punkt in hauptpunkte:
+    for punkt in menue.hauptpunkt_set.all():
         unterpunkte = punkt.unterpunkt_set.all
         liste_punkte.append((punkt, unterpunkte))
     return liste_punkte
 
 class ListeMitMenue(ListView):
     def get_context_data(self, **kwargs):
-        liste_menue = erstelle_liste_menue(self.request.user.my_profile)
+        liste_menue = erstelle_liste_menue(self.request.user)
         context = super(ListeMitMenue, self).get_context_data(**kwargs)
         context['liste_menue'] = liste_menue
         return context        
@@ -28,7 +31,7 @@ class DetailMitMenue(DetailView):
         return context        
     
 def index(request):
-    liste_menue = erstelle_liste_menue()
+    liste_menue = erstelle_liste_menue(request.user)
     
     return render(
         request, 

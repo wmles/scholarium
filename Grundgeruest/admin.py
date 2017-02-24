@@ -4,6 +4,14 @@ from django.contrib import admin
 
 from .models import *
 
-admin.site.register(Hauptpunkt)
+class UnterpunktInline(admin.TabularInline):
+    model = Unterpunkt
+    fields = ('bezeichnung', 'slug')
+    extra = 1
+
+class HauptpunktAdmin(admin.ModelAdmin):
+    inlines = [UnterpunktInline]
+
+admin.site.register(Hauptpunkt, HauptpunktAdmin)
 admin.site.register(Unterpunkt)
 

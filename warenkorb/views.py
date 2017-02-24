@@ -21,13 +21,16 @@ class Warenkorb(BaseCart):
 
 def bestellungen(request):
     nutzer = request.user.my_profile
-    liste_menue = erstelle_liste_menue(nutzer)
+    liste_menue = erstelle_liste_menue(request.user)
     kaeufe = Kauf.objects.filter(nutzer=nutzer)
     medien = [kauf for kauf in kaeufe if kauf.produkt.zu_medium]
     veranstaltungen = [kauf for kauf in kaeufe if kauf.produkt.zu_veranstaltung]
     return render(request, 
         'warenkorb/bestellungen.html', 
-        {'medien': medien, 'veranstaltungen': veranstaltungen})
+        {'medien': medien, 
+            'veranstaltungen': veranstaltungen, 
+            'liste_menue': liste_menue,
+        })
 
 def kaufen(request):
     warenkorb = Warenkorb(request)

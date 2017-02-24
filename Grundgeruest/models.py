@@ -15,17 +15,24 @@ class Menuepunkt(Grundklasse):
         blank=True, 
         default=0)
     nummer = models.IntegerField(default=1)
+
     class Meta:
         abstract = True
         ordering = ['nummer']
 
-class Hauptpunkt(Menuepunkt):
-    pass
-    
-class Unterpunkt(Menuepunkt):
-    gehoert_zu = models.ForeignKey(Hauptpunkt)
     def __str__(self):
         return "{} - {}".format(
             self.gehoert_zu.bezeichnung,
             self.bezeichnung)
             
+class GanzesMenue(Grundklasse):
+    pass
+    
+class Hauptpunkt(Menuepunkt):
+    gehoert_zu = models.ForeignKey(GanzesMenue)
+    
+class Unterpunkt(Menuepunkt):
+    gehoert_zu = models.ForeignKey(Hauptpunkt)
+
+
+
