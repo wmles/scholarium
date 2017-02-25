@@ -55,12 +55,12 @@ class Medium(KlasseMitProdukten):
     def __str__(self):
         return '{} ({})'.format(self.bezeichnung, self.slug) 
         
-    def save(self):
+    def save(self, **kwargs):
         self.beschreibung = self.beschreibung or self.gehoert_zu.beschreibung
         self.bezeichnung = self.bezeichnung or self.gehoert_zu.bezeichnung
         self.typ = self.typ or self.gehoert_zu.art_veranstaltung
         self.datum = self.datum or self.gehoert_zu.datum
         if not self.pk:
             self.slug = ''.join(random.sample(string.ascii_lowercase, 12))
-        super().save()
+        super().save(**kwargs)
         

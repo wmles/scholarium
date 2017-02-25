@@ -16,6 +16,14 @@ class Produkt(Grundklasse):
         "Veranstaltungen.Medium", 
         null=True, blank=True, 
         on_delete=models.SET_NULL)
+    zu_buechlein = models.ForeignKey(
+        "Scholien.Buechlein", 
+        null=True, blank=True, 
+        on_delete=models.SET_NULL)
+    zu_buch = models.ForeignKey(
+        "Bibliothek.Buch", 
+        null=True, blank=True, 
+        on_delete=models.SET_NULL)
     preis = models.SmallIntegerField(blank=True, null=True)
     
     # vielleicht ist das Quatsch, weil gedoppelt mit zu_xy-Attribut
