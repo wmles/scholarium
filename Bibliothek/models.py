@@ -42,6 +42,8 @@ class Buch(Grundklasse):
     stichworte = models.CharField(
         max_length=200,
         null=True, blank=True)
+    zusammenfassung = models.TextField(
+        null=True, blank=True)
     
     class Meta:
         verbose_name_plural = 'Bücher'
