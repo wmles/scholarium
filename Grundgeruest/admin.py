@@ -15,3 +15,4 @@ class HauptpunktAdmin(admin.ModelAdmin):
 admin.site.register(Hauptpunkt, HauptpunktAdmin)
 admin.site.register(Unterpunkt)
 
+

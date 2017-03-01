@@ -75,3 +75,11 @@ class Kauf(models.Model):
     class Meta():
         verbose_name_plural = 'Käufe'
 
+
+from django.db.models.signals import pre_save
+from django.dispatch import receiver
+from django.template.defaultfilters import slugify
+
+@receiver(pre_save, sender=User)
+def user_nutzername_fuellen(sender, instance, *args, **kwargs):
+    instance.username = slugify(instance.email)

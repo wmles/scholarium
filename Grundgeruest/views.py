@@ -2,7 +2,7 @@
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponseRedirect, HttpResponse, Http404
 from django.core.urlresolvers import reverse
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, TemplateView
 from .models import *
 
 def erstelle_liste_menue(user=None):
@@ -16,20 +16,22 @@ def erstelle_liste_menue(user=None):
         liste_punkte.append((punkt, unterpunkte))
     return liste_punkte
 
-class ListeMitMenue(ListView):
+class MenueMixin():
     def get_context_data(self, **kwargs):
         liste_menue = erstelle_liste_menue(self.request.user)
-        context = super(ListeMitMenue, self).get_context_data(**kwargs)
+        context = super().get_context_data(**kwargs)
         context['liste_menue'] = liste_menue
         return context        
 
-class DetailMitMenue(DetailView):
-    def get_context_data(self, **kwargs):
-        liste_menue = erstelle_liste_menue(self.request.user)
-        context = super(DetailMitMenue, self).get_context_data(**kwargs)
-        context['liste_menue'] = liste_menue
-        return context        
-    
+class TemplateMitMenue(MenueMixin, TemplateView):
+    pass
+
+class ListeMitMenue(MenueMixin, ListView):
+    pass
+
+class DetailMitMenue(MenueMixin, DetailView):
+    pass
+        
 def index(request):
     liste_menue = erstelle_liste_menue(request.user)
     
