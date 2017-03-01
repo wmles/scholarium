@@ -422,7 +422,7 @@ th, td {
 th {
 	font-size: 14pt;
 	height: 20px;
-  padding: 5px 0;
+    padding: 5px 0;
 	color: rgb(180,180,180);
 	text-align: right;
 }
@@ -430,6 +430,105 @@ th {
 td {
 	font-size: 12pt;
 }
+
+/* Gast-Seiten */
+
+.blog {
+	width: 800px;
+	padding-bottom: 30px;
+	margin: auto;
+}
+
+.blog h1 {
+	font-size: 20pt;
+}
+
+.blog p {
+	line-height: 1.6em;
+	margin: 30px 0 30px;	
+	font-size: 16pt;
+}
+
+.blog a:link {
+	color: rgb(46,74,98);
+	border-bottom: 1px dotted;
+}
+
+.blog a:hover {
+	border-bottom: 1px solid;
+	color: rgba(46,74,98,0.8);
+}
+
+.blog a:visited {
+	border-bottom: 1px solid;
+	color: rgba(46,74,98,0.6);
+}
+
+.blog a {
+	text-decoration: none;
+}
+
+.blog_text_fragen h2 {
+	font-size: 20pt;
+	text-shadow: 0px 0px 0px #666;	
+	text-align: left;
+	font-family: "Garamond", Georgia, Times, sans-serif;
+	font-weight: normal;
+}
+
+.blog_upgrade, .blog_subscribe {
+	padding: 30px;
+	width: 100%;
+    background-color: #fafafa;
+    border: 1px solid #f0f0f0;
+    border-radius: 6px;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.05) inset;
+    display: inline-block;
+    font-size: 16pt;
+    max-width: 900px;
+    position: relative;
+    text-align: center;
+}
+
+.blog_subscribe {
+    max-width: 438px;
+    margin: 30px auto;
+}
+
+.inputfield {
+	padding: 0 14px;
+	background-color: #fff;
+	border: 1px solid #cfcfcf;
+	margin: 5px;
+	width: 172px;
+	height: 50px;
+	font-size: 16pt;
+	font-family: "Garamond", Georgia, Times, sans-serif;
+}
+
+.inputbutton {
+	text-decoration: none;
+	background: rgb(46,74,98);
+	color: #fff;
+	border: 0;
+	border-radius: 2px;
+	margin: 5px;
+	min-width: 200px;
+	height: 50px;
+	font-size: 16pt;
+	font-family: "Futura Book", Helvetica, Arial, serif;
+	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 1px 0px rgba(0, 0, 0, 0.24);
+}
+
+.inputbutton:hover {
+	background: rgb(30,48,64);
+}
+
+.inputbutton:disabled {
+	background: rgb(200,200,200);
+}
+
+/* Veranstaltungen */
 
 div.veranstaltungen {
 	width: 60%;
@@ -475,12 +574,13 @@ div.veranstaltung p {
 	line-height: 1.6;
 }
 
-div.veranstaltung p + div {
+p.linie {
 	margin-top: 15px;
 	text-align: center !important;
+	padding-bottom: 20px;
 }
 
-div.veranstaltung p + div > img {
+p.linie img {
 	display: inline;
 	max-height: 35px;
 }

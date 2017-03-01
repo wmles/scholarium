@@ -15,18 +15,27 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from Grundgeruest.views import TemplateMitMenue
 from Veranstaltungen.urls import *
 
 urlpatterns = [
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^fragen/', 
+        TemplateMitMenue.as_view(
+            template_name='Gast/fragen.html'), 
+        name='gast_fragen'),
+    url(r'^scholien/', 
+        TemplateMitMenue.as_view(
+            template_name='Gast/scholien.html'), 
+        name='gast_scholien'),
     url(r'^accounts/', include('userena.urls')),
     url(r'^warenkorb/', include('warenkorb.urls')),
     url(r'^veranstaltungen/', include(veranstaltungen_urls)),
     url(r'^salon/', include(salons_urls)),
     url(r'^seminare/', include(seminare_urls)),
-    url(r'^bibliothek/', include('Bibliothek.urls')),        
-    url(r'^scholien', include('Scholien.urls')),        
+    url(r'^bibliothek/', include('Bibliothek.urls')),
+    url(r'^scholien/', include('Scholien.urls')),
     url(r'^', include('Grundgeruest.urls')),
 ]
 

@@ -14,7 +14,7 @@
         {{ veranstaltung.datum | date:"l, d. F Y," }} {{ art.zeit_beginn | time:"H:i" }} bis {{ art.zeit_ende|time:"H:i" }} Uhr
       </div>
       <p>{{ veranstaltung.beschreibung }}</p>
-      <div><img src="{% static 'img/linie.png' %}" alt='linie'></div>
+      <p class="linie"><img src="{% static 'img/linie.png' %}" alt='linie'></p>
     </div>
     {% endwith %}{% endfor %}
   </div>
